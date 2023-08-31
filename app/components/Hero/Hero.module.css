@@ -1,0 +1,29 @@
+/* Hero.module.css */
+
+/* Fade-in animation */
+.fadeIn {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in animation */
+  .slideIn {
+    width: 0;
+    animation: slideInAnimation 0.8s ease forwards;
+  }
+  
+  @keyframes slideInAnimation {
+    to {
+      width: 100%;
+    }
+  }
+  /* animation.module.css */
+
