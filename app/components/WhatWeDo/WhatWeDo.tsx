@@ -66,18 +66,13 @@ const WhatWeDo = () => {
         hidden: { opacity: 0, y: 50 },
       }}
       transition={{ duration: 0.5 }}
-      className="bg-[#F1F1F1]">
+      className="">
       <Container>
         <div className="w-full flex justify-center mt-10 py-5">
           <div className="max-w-4xl w-full">
-            <h1 className="font-bold text-center text-4xl mb-4">
+            <h1 className="font-bold text-center text-4xl mb-10">
               Our Expertise
             </h1>
-            <p className={`text-center text-gray-600 mb-5`}>
-              Join us at A² Crypto, where we help you take control of your
-              crypto future. We're here to support you every step of the way as
-              you explore the exciting opportunities of the decentralized world.
-            </p>
             {data.map((info) => (
               <Card key={info.image} info={info} />
             ))}

@@ -31,17 +31,7 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="flex bg-[#F1F1F1] py-10 flex-wrap md:flex-nowrap justify-evenly items-center my-10 px-4">
-      <div className=" max-w-[500px]">
-        <Image
-          className="w-full rounded-lg"
-          src="/images/contact.jpg"
-          alt="contact"
-          width={300}
-          height={500}
-        />
-      </div>
-
+      className="flex  py-10 flex-wrap md:flex-nowrap justify-evenly items-center  px-4">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -51,34 +41,15 @@ const ContactUs = () => {
           hidden: { opacity: 0, y: 50 },
         }}
         transition={{ duration: 0.5 }}
-        className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cecece] px-5 py-10  lg:-mr-14">
+        className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg px-5 bg-[#F1F1F1] py-10 shadow-lg">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="w-full mb-10 text-center">
-          <div className="grid grid-cols-2 place-items-center gap-2">
+          <div className="flex flex-col justify-center items-center mt-5 font-semibold">
             <div className="flex justify-center items-center">
-              <span>Telegram:</span>
-              <a className="ml-1 text-black" href="https://t.me/AsquaredCrypto">
-                <Image
-                  src="/images/telegram.png"
-                  alt="tel"
-                  width={20}
-                  height={20}
-                />
-              </a>
+              Phone: +96103030030
             </div>
-            <div className="flex items-center">
-              <span>Email:</span>
-              <a
-                className="ml-1 text-black"
-                href="mailto:asquaredcrypto@gmail.com">
-                <Image
-                  src="/images/email.png"
-                  alt="tel"
-                  width={20}
-                  height={20}
-                />
-                {/* Adjust width and height */}
-              </a>
+            <div className="flex justify-center items-center">
+              Email: email@gmail.com
             </div>
           </div>
         </div>

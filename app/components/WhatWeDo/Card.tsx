@@ -33,16 +33,22 @@ const Card = ({
       transition={{ duration: 0.5 }}
       className="flex flex-col md:flex-row md:items-center mb-10"
       key={info.title}>
-      <div className="md:w-1/4 w-full md:mr-8">
-        <Image src={info.image} width={100} height={100} alt={info.title} />
-      </div>
       <div className="md:w-3/4 w-full ">
-        <h2 className="font-bold text-xl underline justify-start text-[#cab169] mb-4">
-          {info.title}:
+        <h2 className="flex">
+          <Image
+            className="-mt-[20px]"
+            src={info.image}
+            width={60}
+            height={60}
+            alt={info.title}
+          />{" "}
+          <div className="font-bold text-xl underline justify-start text-purple-800 mb-4">
+            {info.title}:
+          </div>
         </h2>
-        <ul className="font-semibold text-gray-600 pl-8">
+        <ul className="font-semibold pl-8">
           {info.text.map((text, index) => (
-            <li className="mb-2 list-disc" key={index}>
+            <li className="mb-2" key={index}>
               {text}
             </li>
           ))}

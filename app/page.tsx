@@ -8,7 +8,6 @@ export default function Home() {
     <div className="flex-grow">
       <Hero />
       <WhatWeDo />
-      <Solution />
       <ContactUs />
     </div>
   );

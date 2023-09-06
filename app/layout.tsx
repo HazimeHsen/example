@@ -8,8 +8,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Asquared Crypto",
-  description: "Asquared Crypto",
+  title: "DJ",
+  description: "DJ",
 };
 
 export default function RootLayout({
